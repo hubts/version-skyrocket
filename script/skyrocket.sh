@@ -25,10 +25,11 @@ get_version() {
 
 # Git commit
 commit() {
+    dir="$1"
     git add .
     git cz
     if (( $? == 0 )); then
-        new_version=$(get_version)
+        new_version=$(get_version $dir)
         echo "🥰 [ $new_version ] Successfully updated and committed!"
     else
         echo "😥 Failed to commit."
@@ -60,7 +61,7 @@ bump() {
         exit 1
     fi
 
-    commit
+    commit $dir
 }
 
 ################################
