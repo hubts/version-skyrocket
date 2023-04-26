@@ -1,6 +1,6 @@
 {
     "name": "version-skyrocket",
-    "version": "0.0.4-0",
+    "version": "0.2.2",
     "description": "A script to update your package version with git commit",
     "main": "index.js",
     "repository": "https://github.com/hubts/version-skyrocket.git",
