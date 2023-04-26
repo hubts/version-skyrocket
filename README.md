@@ -2,7 +2,7 @@
     <p align="center">🚀 SkyRocket (Versioning)</p>
 </h1>
 
-## Introduction
+## 🎵 Introduction
 
 > **A simple script to update your package version with git commit!**
 
@@ -10,12 +10,16 @@ This script helps you manage `package.json` version in your project.
 
 If you want to increase (or decrease) the version after completing the implementation in your project, run this script. The version would be updated, and the updates are committed by writing a commit message from you. Now, you just have to 'push' your project to the remote repository!
 
-## Prerequisites
+## 🚨 Prerequisites
+
+> This script is used for JS/TS project.
 
 -   You should be able to use the `node` command from [here](https://nodejs.org/en).
 -   You should be able to use the `git` command from [here](https://git-scm.com/).
 
-## Setup
+## 💡 Setup
+
+> If your project already exists, just accompany `skyrocket.sh` script and a few settings below.
 
 First of all, you can clone this repository or just copy the `skyrocket.sh` script into your project.
 
@@ -23,7 +27,7 @@ First of all, you can clone this repository or just copy the `skyrocket.sh` scri
 $ git clone https://github.com/hubts/version-skyrocket
 ```
 
-Using this project or your project, set `package.json` as the following:
+Set `package.json` as the following:
 
 ```bash
 "scripts": {
@@ -49,7 +53,7 @@ $ yarn add --dev commitizen cz-emoji-conventional
 }
 ```
 
-Now, your `package.json` looks like:
+Now, your `package.json` looks like after the setting and installation:
 
 ```bash
 {
@@ -78,9 +82,11 @@ Now, your `package.json` looks like:
 
 ```
 
-## Usage
+## ⛳️ Usage
 
-The `git` script in `package.json` runs the `skyrocket.sh` script in your root directory.
+The `git` script in `package.json` runs the `skyrocket.sh` script.
+
+Run this command in your root directory:
 
 ```bash
 $ yarn git [version] [path?]
@@ -114,6 +120,8 @@ $ yarn git 0.0.3 ./api
 
 In this case, `package.json` must be located in `api` directory.
 
-**After updating the version, git commit will be proceed.**
+After updating the version, git commit will be proceed. The script uses `commitizen` for git commit, so you should enter the information of your commitment.
 
-The script uses `commitizen` for git commit, so you should enter the information of your commitment as the following process by commitizen.
+## 🖼️ Example GIF
+
+<img src="https://user-images.githubusercontent.com/25478540/234499779-f061ee9d-a7d9-472b-82a8-64c91e33b101.gif" />
