@@ -306,7 +306,7 @@ color-name@~1.1.4:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
 
-commitizen@^4.0.3, commitizen@^4.3.0:
+commitizen@^4.0.3, commitizen@^4.2.4, commitizen@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/commitizen/-/commitizen-4.3.0.tgz#0d056c542a2d2b1f9b9aba981aa32575b2849924"
   integrity sha512-H0iNtClNEhT0fotHvGV3E9tDejDeS04sN1veIebsKYGMuGscFaswRoYJKmT3eW85eIJAs0F28bG2+a/9wCOfPw==
@@ -369,6 +369,15 @@ cz-conventional-changelog@3.3.0:
     word-wrap "^1.0.3"
   optionalDependencies:
     "@commitlint/load" ">6.1.1"
+
+cz-emoji-conventional@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/cz-emoji-conventional/-/cz-emoji-conventional-1.0.1.tgz#8f3112c2a8512e60c8363d854507dba939f08a00"
+  integrity sha512-jY+jmmbQ9n671gLWSSI34a7efDz1YPfzM3QZC5T+r8CJCCo1/myW8Ik09NV9KQ5hVSc2BBfvcq7e5IsBOZjyjg==
+  dependencies:
+    chalk "^4.1.1"
+    commitizen "^4.2.4"
+    word-wrap "^1.2.3"
 
 dedent@0.7.0:
   version "0.7.0"
@@ -1064,7 +1073,7 @@ which@^1.2.14:
   dependencies:
     isexe "^2.0.0"
 
-word-wrap@^1.0.3:
+word-wrap@^1.0.3, word-wrap@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
   integrity sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
