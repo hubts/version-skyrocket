@@ -1,6 +1,6 @@
 {
     "name": "version-skyrocket",
-    "version": "0.0.3",
+    "version": "0.0.4-0",
     "description": "A script to update your package version with git commit",
     "main": "index.js",
     "repository": "https://github.com/hubts/version-skyrocket.git",
@@ -9,9 +9,15 @@
     "scripts": {
         "git": "./script/skyrocket.sh"
     },
-    "dependencies": {},
     "devDependencies": {
         "commitizen": "^4.3.0",
         "cz-emoji-conventional": "^1.0.1"
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-emoji-conventional",
+            "disableScopeLowerCase": true,
+            "disableSubjectLowerCase": true
+        }
     }
 }
