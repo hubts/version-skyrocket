@@ -117,27 +117,3 @@ In this case, `package.json` must be located in `api` directory.
 **After updating the version, git commit will be proceed.**
 
 The script uses `commitizen` for git commit, so you should enter the information of your commitment as the following process by commitizen.
-
-```bash
-   ~/Workspace/hubts/version-skyrocket on    main +2 ❯ yarn git patch                                                                                                                                                                                                                                                                   took   10s   system at   04:01:53 PM
-yarn run v1.22.19
-$ ./script/skyrocket.sh patch
-🎄 Your current branch is [ main ]
-📂 Location: /Users/kimts/Workspace/hubts/version-skyrocket/package.json
-🛫 We are trying to update the version [ 0.2.1 ] -> [ v0.2.2 ]
-cz-cli@4.3.0, cz-emoji-conventional@1.0.1
-
-? Select the type of change that you're committing: 📝 docs:      Documentation only changes
-? What is the scope of this change (e.g. component or file name): (press enter to skip) README
-? Write a short, imperative tense description of the change (max 83 chars):
- (23) Add readme docs as test
-? Provide a longer description of the change: (press enter to skip)
-
-? Are there any breaking changes? No
-? Does this change affect any open issues? No
-[main 428a428] 📝 docs(README): Add readme docs as test
- 2 files changed, 120 insertions(+), 1 deletion(-)
-🥰 [ 0.2.2 ] Successfully updated and committed!
-✨  Done in 18.21s.
-   ~/Workspace/hubts/version-skyrocket on    main ❯
-```
